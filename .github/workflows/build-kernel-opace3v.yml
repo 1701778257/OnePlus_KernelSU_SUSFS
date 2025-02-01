@@ -1,4 +1,4 @@
-name: Build OnePlus Ace 3V Android 14 6.1 Kernel
+name: Build OnePlus pad pro Android 14 6.1 Kernel
 
 on:
   workflow_call:  # This allows this workflow to be called from another workflow
@@ -68,7 +68,7 @@ jobs:
           
           # Initialize and sync kernel source
           echo "Initializing and syncing kernel source..."
-          $REPO init -u https://github.com/OnePlusOSS/kernel_manifest.git -b oneplus/sm7675 -m oneplus_ace_3v_v.xml --repo-rev=v2.16 --depth=1
+          $REPO init -u https://github.com/OnePlusOSS/kernel_manifest.git -b oneplus/sm8650 -m oneplus_pad2_v.xml --repo-rev=v2.16 --depth=1
           
           # Sync repo and apply patches
           $REPO --version
